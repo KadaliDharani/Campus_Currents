@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <style>
+        *{
+          margin: 0;
+          padding: 0;
+          box-sizing: border-box;
+          font-family: 'Poppins', sans-serif;
+        }
+      .contact{
+          position: relative;
+          min-height: 100vh;
+          padding: 50px 100px;
+          display: flex;
+          justify-content: center;
+           flex-direction: column;
+          background: linear-gradient(120deg,#3168ce,#80c8f5);
+          background-size: cover;
+        }
+      .contact .content
+      {
+          max-width: 800px;
+          text-align: center;
+      }
+      .contact .content 
+      
+      {
+          font-size: 36px;
+          font-weight: 500;
+          color: #040924;
+      }
+      .contact .content p
+      {
+          font-size: 20px;
+          font-weight: 300;
+          color: #fff;
+      }
+      .container
+      {
+          width: 100%;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          margin-top: 30px;
+      }
+      .container .contactInfo
+      {
+          width: 50%;
+          display: flex;
+          flex-direction: column;
+      }
+      .container .contactInfo .box
+      {
+          position: relative;
+          padding: 20px 0;
+          display:flex;
+      }
+      .container .contactInfo .box .icon
+      {
+          min-width: 60px;
+          height: 60px;
+          background: #fff;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          border-radius: 50%;
+          font-size: 22px;
+      }
+      .container .contactInfo .box .text
+      {
+          display: flex;
+          margin-left: 20px;
+          font-size: 16px;
+          color: #fff;
+          flex-direction: column;
+          font-weight: 300;
+      }
+      .container .contactInfo .box .text h3
+      {
+          font-weight: 500;
+          color: #0c0d0e;
+      }
+      .contactForm
+      {
+          width: 40%;
+          padding: 40px;
+          background:#fff;  
+      }
+      .contactForm h2
+      {
+          font-size: 30px;
+          color: #080808;
+          font-weight: 500;
+      
+      }
+      .contactForm .inputBox
+      {
+          position: relative;
+          width: 100%;
+          margin-top: 10px;
+      
+      }
+      .contactForm .inputBox input,
+      .contactForm .inputBox textarea
+      {
+          width: 100%;
+          padding: 5px 0;
+          font-size: 16px;
+          margin: 10px 0;
+          border: none;
+          border-bottom: 2px solid #333;
+          outline: none;
+          resize: none;
+      
+      }
+      .contactForm .inputBox span
+      {
+          position: absolute;
+          left: 0;
+          padding: 5px 0;
+          font-size: 16px;
+          margin: 10px 0;
+          pointer-events: none;
+          transition: 0.5s;
+          color: #666;
+      }
+      .contactForm .inputBox input:focus ~ span,
+      .contactForm .inputBox input:valid ~ span,
+      .contactForm .inputBox textarea:focus ~ span,
+      .contactForm .inputBox textarea:valid ~ span{
+          color: #e9e9e9;
+          font-size: 12px;
+          transform: translateY(-20px);
+      }
+      .contactForm .inputBox input[type="submit"]
+      {
+          width: 100px;
+          background-color: #00bcd4;
+          color: #fff;
+          border: none;
+          cursor: pointer;
+          padding: 10px;
+          font-size: 18px;
+      }
+    </style>
+    </head>
+        <section class="contact">
+            <div class="content">
+                <h2>Contact Us</h2>
+                <br><p>We can help.I on hand to answer your questions.<br> Feel free to contact us and resolve your queries. <br> Thankyou!!!</p><br>
+            </div>
+            <div class="container">
+                <div class="contactInfo">
+                    <div class="box">
+                        <div class="icon"><i class="fa fa-map-marker" aria-hidden="true"></i></div>
+                        <div class="text">
+                            <h3>Address</h3>
+                            <p>Vishnupur Bhimavaram<br>West Godavari ,Andhra Pradesh<br>534242</p>
+                        </div>
+                    </div>
+
+                    <div class="box">
+                        <div class="icon"><i class="fa fa-phone" aria-hidden="true"></i></div>
+                        <div class="text">
+                            <h3>Phone</h3>
+                            <p>987-654-3210</p>
+                        </div>
+                    </div>
+                        <div class="box">
+                            <div class="icon"><i class="fa-solid fa-envelope"></i></div>
+                            <div class="text">
+                                <h3>Email</h3>
+                                <p>vishnupur@gmail.com</p>
+                            </div>
+                        </div>
+                </div>
+                <div class="contactForm">
+                    <form>
+                        <h2>Send Message</h2>
+                        <div class="inputBox">
+                            <input type="text" name="" required="required">
+                            <span>Full Name</span>
+                        </div>
+
+                        <div class="inputBox">
+                            <input type="text" name="" required="required">
+                            <span>Email</span>
+                        </div>
+
+                        <div class="inputBox">
+                            <textarea required="required"></textarea>
+                            <span>Type your Message...</span>
+                        </div>
+
+                        <div class="inputBox">
+                            <input type="submit" name="" value="Send">
+                        </div>
+
+                    </form>
+                </div>
+            </div>
+        </section>
+</html>

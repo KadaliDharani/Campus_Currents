@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+ 
+</head>
+<style></style>
+<body>
+  <!-- <center><h2>SIGN UP</h2></center> -->
+  <nav class="navbar navbar-dark bg-primary navbar fixed-top mb-5">
+    <!-- <span class="navbar-brand mb-0 h1">CAMPUS CURRENTS</span> -->
+    <!-- <a href="newblog" class="btn-10">Add event</a> -->
+    <a class="navbar-brand" href="#" style="text-decoration: none;">
+      <h2><img src="https://getmyuni.azureedge.net/college-image/small/vishnu-institute-of-technology-vitb-rangareddi.jpg" width="40" height="40" alt="vishnu logo">  CAMPUS CURRENTS</h2>
+    </a>
+    <!-- <a href="logout">
+      <i class="fas fa-right-from-bracket fa-beat fa-2x"></i>
+    </a> -->
+    <!-- <div class="hide">Logout</div> -->
+    <!-- <a class="navbar-brand" href="#">
+      <img src="https://getmyuni.azureedge.net/college-image/small/vishnu-institute-of-technology-vitb-rangareddi.jpg" width="30" height="30" alt="vishnu logo">
+    </a> -->
+  </nav>
+   <div class="zz">
+    <div class="p-5 bg-image" style="
+    background-image: linear-gradient(rgba(184, 211, 245, 0.527),white), url('https://static.vecteezy.com/system/resources/thumbnails/001/352/513/small_2x/blue-sky-textures-background-photo.jpg');
+    background-repeat: no-repeat;
+background-size: cover ;  
+    height: 300px;
+    "></div>
+<div class="card mx-4 mx-md-5 shadow-5-strong" style="
+margin-top: -100px;
+background-image: linear-gradient(to right,rgb(149, 176, 250),rgb(195, 235, 252));
+backdrop-filter: blur(30px);
+">
+<div class="card-body py-5 px-md-5">
+
+  <div class="row d-flex justify-content-center">
+    <div class="col-lg-8">
+    <form action="/ecreate" method="post" align="center" class="row g-3" encType="multipart/form-data">
+      <div class="row">
+        <div class="col-md-6 mb-4">
+          <div class="form-outline">
+        <label class="form-label"><strong>First name</strong></label>
+        <input name="efname" type="text" class="form-control" id="validationDefault01" placeholder="First Name"  style="border: solid black 1px;" required>
+      </div></div>
+      <div class="col-md-6 mb-4">
+        <div class="form-outline">
+        <label  class="form-label"><strong>Last name</strong></label>
+        <input name="elname" type="text" class="form-control" id="validationDefault02" placeholder="last name" style="border: solid black 1px;" required>
+      </div></div>
+      <div class="col-md-6 mb-4">
+        <div class="form-outline">
+        <label  class="form-label"><strong>Username</strong></label>
+        <div class="input-group">
+          <span class="input-group-text" id="inputGroupPrepend2">@</span>
+          <input name="eusername" type="text" class="form-control" id="validationDefaultUsername"  aria-describedby="inputGroupPrepend2" style="border: solid black 1px;" required>
+        </div>
+      </div></div><br>
+      <div class="col-md-6 mb-4">
+        <div class="form-outline">
+        <label class="form-label"><strong>Email</strong></label>
+        <input name="eemail"  type="email" class="form-control" id="validationDefault06" placeholder="example@gmail.com" style="border: solid black 1px;" required>
+      </div></div><br>
+      <div class="col-md-6 mb-4">
+        <div class="form-outline">
+        <label  class="form-label"><strong>Create Password</strong></label>
+        <input name="epassword" type="password" class="form-control" id="validationDefault07" style="border: solid black 1px;" required>
+      </div></div>
+      <div class="col-md-6 mb-4">
+        <div class="form-outline">
+        <label  class="form-label"><strong>confirm Password</strong></label>
+        <div class="input-group">
+          <input type="password" class="form-control" id="validationDefault08" style="border: solid black 1px;" required>
+        </div>
+      </div></div><br>
+      <div class="col-md-6 mb-4">
+        <div class="form-outline">
+        <label class="form-label"><strong>Age</strong></label>
+        <input name="eage" type="number" class="form-control" id="validationDefault09" style="border: solid black 1px;" required>
+      </div></div><br>
+      <div class="col-md-6 mb-4">
+        <div class="form-outline">
+        <label  class="form-label"><strong>Gender</strong></label>
+        <select name="egender" class="form-select" id="validationDefault10" style="border: solid black 1px;" required>
+          <option selected disabled value=""></option>
+          <option >Female</option>
+          <option >Male</option>
+          <option>other</option>
+        </select>      
+      </div></div><br>
+      <div class="col-md-6 mb-4">
+        <div class="form-outline">
+        <label  class="form-label"><strong>Salutation</strong></label>
+        <select name="esalutation" class="form-select" id="validationDefault11" style="border: solid black 1px;" required>
+          <option selected disabled value=""></option>
+          <option >Ms.</option>
+          <option >Mr.</option>
+          <option >Mrs.</option>
+          <option >other</option>
+        </select> 
+      </div></div><br>
+      
+      <div class="col-md-6">
+        <label for="validationDefault03" class="form-label"><strong>City</strong></label>
+        <input name="ecity" type="text" class="form-control" id="validationDefault03" style="border: solid black 1px;" required>
+      </div><br>
+      <div class="col-md-6 mb-4">
+        <div class="form-outline">
+        <label for="validationDefault04" class="form-label"><strong>State</strong></label>
+        <input name="estate" type="text" class="form-control" id="validationDefault03" style="border: solid black 1px;" required>
+      </div></div><br>
+      <div class="col-md-6 mb-4">
+        <div class="form-outline">
+        <label for="validationDefault05" class="form-label"><strong>pincode</strong></label>
+        <input name="epincode" type="text" class="form-control" id="validationDefault05" style="border: solid black 1px;" required>
+      </div></div><br>
+      <div class="col-md-6 mb-4">
+        <div class="form-outline">
+      <strong><p>enter your college Id. 
+        Note:ID must be jpg / png / jpeg format, Should visible clear.</strong>
+      </p>
+      </div></div>
+      <div class="fi-input"><input type="file" name="file" accept=".jpg,.png,.jpeg" required/></div>
+
+      <div class="col-12">
+        <div class="form-check d-flex justify-content-center mb-4">
+          <input class="form-check-input" type="checkbox" value="" id="invalidCheck2" style="border: solid black 1px;" required>
+          <label class="form-check-label" for="invalidCheck2">
+            <strong>Agree to terms and conditions</strong>
+          </label>
+        </div>
+      </div><br>
+      <button type="submit" class="btn btn-secondary btn-sm">Submit</button>
+
+
+    </form>
+    </div>
+    </div></div></div>
+  </div>
+  
+    <script>
+        var password = document.getElementById("validationDefault07")
+        , confirm_password = document.getElementById("validationDefault08");
+  
+      function validatePassword(){
+        if(password.value != confirm_password.value) {
+          confirm_password.setCustomValidity("Passwords Don't Match");
+        } else {
+          confirm_password.setCustomValidity('');
+        }
+      }
+  
+      password.onchange = validatePassword;
+     
+     
+      confirm_password.onkeyup = validatePassword;
+
+
+
+      </script>
+</body>
+
+   </html>

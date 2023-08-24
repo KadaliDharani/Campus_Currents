@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Blog</title>
+  <style>
+    .center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+.center:hover{
+  transform: scale(1.05);
+}
+.mark{
+  font-size: 25px;
+}
+
+.hide {
+  display: none;
+}
+    a {
+      color: black;
+      text-decoration: none;
+      text-align: center;
+vertical-align: middle;
+    }
+    a:link{
+      text-decoration: none;
+    }
+
+    a:hover + .hide{
+      display: block;
+      font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+      font-size: 20px;
+  color: rgb(5, 5, 5);
+  width: 90px;
+  height:60%;
+  text-align: center;
+ 
+  position:absolute;
+  top:69px;
+  right:8px;
+  background-image: linear-gradient(rgb(204, 236, 252),rgb(183, 182, 190));
+     
+  border-radius: 15px;
+    }
+  </style>
+</head>
+<body>
+  <nav class="navbar navbar-dark bg-primary navbar fixed-top mb-5">
+    <!-- <span class="navbar-brand mb-0 h1">CAMPUS CURRENTS</span> -->
+    <!-- <a href="newblog" class="btn-10">Add event</a> -->
+    <a class="navbar-brand" href="#" style="text-decoration: none;">
+      <h2><img src="https://getmyuni.azureedge.net/college-image/small/vishnu-institute-of-technology-vitb-rangareddi.jpg" width="40" height="40" alt="vishnu logo">  CAMPUS CURRENTS</h2>
+    </a>
+    <a href="logout">
+      <i class="fas fa-right-from-bracket fa-beat fa-2x"></i>
+    </a>
+    <div class="hide">Logout</div>
+    <!-- <a class="navbar-brand" href="#">
+      <img src="https://getmyuni.azureedge.net/college-image/small/vishnu-institute-of-technology-vitb-rangareddi.jpg" width="30" height="30" alt="vishnu logo">
+    </a> -->
+  </nav><br><br><br><br>
+  <div class="container">
+    <!-- <h1 class="mb-1" align="center"><%= m[0].user %></h1> -->
+    <h1 class="mb-1" align="center"><%= m[0].title %></h1>
+   
+    <br><br>
+    <img class="center" height="400px" width="400" src="<%= m[0].image %>" alt="<%= m[0].title %>"/>
+   <br><br>
+    <div>
+     <p class="mark"> <%- m[0].markdown %></p>
+    </div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Blog</title>
+</head>
+<style>
+  .container{
+    border:2px solid black;
+    padding:50px;
+    width:100%;
+    border-radius:20px;
+    box-shadow: 10px 10px 5px gray;
+    background-color: white;
+  }
+  body{
+
+    background-image: linear-gradient(rgb(196, 214, 247),white);
+  
+  }
+  .hide {
+  display: none;
+}
+    a {
+      color: black;
+      text-decoration: none;
+      text-align: center;
+vertical-align: middle;
+    }
+    a:link{
+      text-decoration: none;
+    }
+
+    a:hover + .hide{
+      display: block;
+      font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+      font-size: 20px;
+  color: rgb(5, 5, 5);
+  width: 90px;
+  height:60%;
+  text-align: center;
+ 
+  position:absolute;
+  top:69px;
+  right:8px;
+  background-image: linear-gradient(rgb(204, 236, 252),rgb(183, 182, 190));
+     
+  border-radius: 15px;
+    }
+</style>
+<body>
+  
+  <nav class="navbar navbar-dark bg-primary navbar fixed-top mb-5">
+    <!-- <span class="navbar-brand mb-0 h1">CAMPUS CURRENTS</span> -->
+    <!-- <a href="newblog" class="btn-10">Add event</a> -->
+    <a class="navbar-brand" href="#" style="text-decoration: none;">
+      <h2><img src="https://getmyuni.azureedge.net/college-image/small/vishnu-institute-of-technology-vitb-rangareddi.jpg" width="40" height="40" alt="vishnu logo">  CAMPUS CURRENTS</h2>
+    </a>
+    <a href="logout">
+      <i class="fas fa-right-from-bracket fa-beat fa-2x"></i>
+    </a>
+    <div class="hide">Logout</div>
+    <!-- <a class="navbar-brand" href="#">
+      <img src="https://getmyuni.azureedge.net/college-image/small/vishnu-institute-of-technology-vitb-rangareddi.jpg" width="30" height="30" alt="vishnu logo">
+    </a> -->
+  </nav><br><br><br><br>
+    <h1 class="mb-4" align="center">New Article</h1>
+    <div class="container">
+    <form action="/add1" method="POST">
+      <%- include('_form_fields') %>
+    </form>
+  </div>
+</body>
+</html>

@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <!-- <link rel="stylesheet" href="style.css"> -->
+  
+    
+    <style>
+        /* .loginpg1{
+          display: flex;
+          justify-content: space-around;
+          height:98vh;
+          align-items: center;
+        }
+        input{
+          border:none;
+          outline: none;
+          }
+          form{
+            border: solid 1px black;
+            padding:20px;
+            border-radius: 10px;
+            background-color: rgba(195, 210, 247, 0.589);;
+        }
+        .one{
+          width: 200px;
+          border-radius:20px;
+        }
+        .btn{
+          background-color: #5faee2;
+          color:white;
+          height: 40px;
+          width: 100px;
+          border-radius:20px;
+        }
+        body{
+          background-image:url('https://th.bing.com/th/id/R.de901fec6b7c872c4f2c708668bcefd5?rik=qAE71zIOEM5jAg&riu=http%3a%2f%2fwww.brandgradients.com%2fimg%2fbackgrounds%2flight-blue-gradient-background.png&ehk=0COdl7CCN1P6obtHA%2bHzEXn8gXb1Km8oc%2bQSdewfl4Q%3d&risl=&pid=ImgRaw&r=0' );
+          
+   background-repeat: no-repeat;
+  background-size: cover ;      } 
+      fieldset{
+        background-color: white;
+        border-radius: 10px;
+      }
+      .i{
+        border-radius: 50%;
+      } */
+      *{
+          font-family: 'poppins' , sans-serif;
+        }
+        .loginpg1{
+          background-color: rgb(220, 240, 251);
+          padding: 0 20px 0 20px;
+        
+        }
+        .main{
+          display:flex;
+          justify-content: center;
+          align-items:center;
+          min-height:100vh;
+          position: absolute;
+          left: 720px;
+  
+        }
+        .side-image{
+          background-position: center;
+          background-size: cover;
+          background-repeat: no-repeat;
+          position: relative;
+          border-radius: 10px 0 0 10px;
+        }
+        .img{
+          width:334px;
+          position: absolute;
+          top:0px;
+          left:-335px;
+          border: solid 1px black;
+          border-top-left-radius: 9px;
+          border-bottom-left-radius: 9px;
+          height:365px;
+        
+        }
+        input{
+          border:none;
+          outline: none;
+          }
+        form{
+            border: solid 1px black;
+            padding:20px;
+            border-top-right-radius: 9px;
+            border-bottom-right-radius: 9px;
+            background-color: rgb(220, 240, 251);
+            height:325px;
+            width:334px;  
+        }
+        .one{
+          width: 200px;
+          border-radius:20px;
+        }
+        .btn{
+          background-color: #5faee2;
+          color:white;
+          height: 40px;
+          width: 100px;
+          border-radius:20px;
+        }
+        .btn:hover{
+          border:4px solid black;
+          box-shadow :0 0 20px black;
+        }
+        body{
+          background-image:url('https://th.bing.com/th/id/R.de901fec6b7c872c4f2c708668bcefd5?rik=qAE71zIOEM5jAg&riu=http%3a%2f%2fwww.brandgradients.com%2fimg%2fbackgrounds%2flight-blue-gradient-background.png&ehk=0COdl7CCN1P6obtHA%2bHzEXn8gXb1Km8oc%2bQSdewfl4Q%3d&risl=&pid=ImgRaw&r=0' );
+   background-repeat: no-repeat;
+  background-size: cover ;      } 
+      fieldset{
+        background-color: white;
+        border-radius: 10px;
+      }
+      fieldset:hover{
+        border:3px solid black;
+        box-shadow:0 0 20px black;
+      }
+      .i{
+        border-radius: 50%;
+      }
+.a{
+  color:aliceblue;
+  position: absolute;
+  top:16px;
+  left:38px;
+
+}
+nav{
+  background-color:  rgb(20, 20, 168);
+  height:90px;
+
+}
+.row{
+        position: absolute;
+        top:230px;
+        right:45%;
+        left:130px;
+        
+      }
+    </style>
+  </head>
+  <body>
+    <nav class="navbar navbar-dark bg-primary navbar fixed-top mb-5">
+     
+      <a class="navbar-brand" href="#" style="text-decoration: none;">
+        <h2 class="a"><img class="im" src="https://getmyuni.azureedge.net/college-image/small/vishnu-institute-of-technology-vitb-rangareddi.jpg" width="40" height="40" alt="vishnu logo">    CAMPUS CURRENTS</h2>
+      </a>
+      <!-- <img src="https://getmyuni.azureedge.net/college-image/small/vishnu-institute-of-technology-vitb-rangareddi.jpg" width="40" height="40" alt="vishnu logo">  CAMPUS CURRENTS</h2>
+       -->
+     
+    </nav>
+    <div class="loginpg1">
+      <div class="main">
+        <div class="row">
+          <div class="col-md-6 side-image">
+            <img class="img" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcREry5F32ZBGwLGlSyUWqrI4sqyYD6TmSTxn2atP7qbdQ&usqp=CAU&ec=48665701" alt="">
+          </div>
+          <div class="col-md-6 right">
+        <span class="agrsignin">
+        <form action="/agrSignIn1" method="post" align="center">
+            <h1> Sign In</h1>
+            
+            <fieldset>
+                <legend align="left">Enter User Name</legend>
+                <input type="text" name="agronomist_username" class="one" >
+            </fieldset>
+
+            <br>
+            <fieldset>
+                <legend align="left">Enter Password</legend>
+                <input type="password" name="agr_password" placeholder="" class="one">
+            </fieldset>
+            <br>
+            <br>
+            <button name="signin1" type="submit" class="btn"> Signin</button>
+        </form>
+    </span>
+  </div>
+</div>
+</div>
+</div> 
+  </body>
+</html>
